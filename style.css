@@ -1,4 +1,3 @@
-/* Basic Style */
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -16,7 +15,6 @@ body {
 .header__link {
     font-family: fantasy, cursive;
 }
-
 @media (max-width: 768px) {
     .header__section { 
         text-align: center;
@@ -35,16 +33,17 @@ body {
 .form__add_item {
     display: flex;
 }
-ul {
+.todo_list,
+.completed_tasks {
     margin: 0;
     padding: 0px;
 }
-li, 
+.todo_list__item, 
 h3 {
     list-style: none;
 }
 .input_form,
-.button__form{
+.button__form {
     outline: none;
 }
 .button__form {
@@ -57,9 +56,8 @@ h3 {
     cursor: pointer;
 }
 .button__form:hover {
-    color: #3a3A3a;
+    color: #333;
 }
-/* Heading */
 h3,
 .new_task__form {
     color: #333;
@@ -76,8 +74,8 @@ h3,
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
+    border: 1px solid #ddd;
+    background: #fff;
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
@@ -85,8 +83,6 @@ h3,
 .input_form:focus {
     color: #333;
 }
-
-/* New Task */
 .new_task__form {
     display: block;
     margin: 0 0 20px;
@@ -94,8 +90,6 @@ h3,
 .new-task {
     width: 318px;
 }
-
-/* Task list */
 .todo_list__item {
     overflow: hidden;
     padding: 20px 0;
@@ -107,7 +101,6 @@ h3,
 .todo_list__item > * {
     vertical-align: middle;
 }
-
 .todo_list__checkbox {
     margin: 0 10px;
 }
@@ -128,23 +121,17 @@ h3,
 .button__form_delete:hover {
     transform: rotateZ(0);
 }
-
-/* Completed */
 #completed-tasks .todo_list__task{
     text-decoration: line-through;
     color: #888;
 }
-
-/* Edit Task */
 .input_form__task {
     display: none;
 }
-
 #edit_mode .input_form {
     display: inline-block;
     width: 224px;
 }
-
 #edit_mode .todo_list__task {
     display: none;
 }
