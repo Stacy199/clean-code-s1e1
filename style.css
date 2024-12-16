@@ -118,8 +118,8 @@ h3,
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.button__form_delete:hover {
-    transform: rotateZ(0);
+.button__img_delete:hover {
+    transform: rotateZ(0deg);
 }
 #completed-tasks .todo_list__task{
     text-decoration: line-through;
