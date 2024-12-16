@@ -15,7 +15,7 @@ const createNewTaskElement = function(taskString) {
     const deleteButtonImg = document.createElement("img");
 
     label.innerText = taskString;
-    label.className = "todo_list__task";
+    label.className = "todo_list__task input_form";
     checkBox.type = "checkbox";
     checkBox.className = "todo_list__checkbox";
     editInput.type = "text";
