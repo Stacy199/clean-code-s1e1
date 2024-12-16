@@ -24,14 +24,14 @@
             <ul class="todo_list" id="incomplete-tasks">
                 <li class="todo_list__item">
                     <input class="todo_list__checkbox" type="checkbox">
-                    <label class="todo_list__task">Pay Bills</label>
-                    <input class="input_form" type="text">
+                    <label class="todo_list__task input_form">Pay Bills</label>
+                    <input class="input_form__task" type="text">
                     <button class="button__form">Edit</button>
                     <button class="button__form button__form_delete">
                         <img class="button__img_delete" src="./remove.svg" alt="button-delete">
                     </button>
                 </li>
-                <li class="todo_list__item editmode">
+                <li class="todo_list__item editmode" id="edit_mode">
                     <input class="todo_list__checkbox" type="checkbox">
                     <label class="todo_list__task">Go Shopping</label>
                     <input class="input_form edit_mode" type="text" value="Go Shopping">
@@ -42,11 +42,11 @@
                 </li>
             </ul>
             <h3>Completed</h3>
-            <ul id="completed-tasks">
+            <ul class="completed_tasks" id="completed-tasks">
                 <li class="todo_list__item">
                     <input class="todo_list__checkbox" type="checkbox" checked>
-                    <label class="todo_list__task">See the Doctor</label>
-                    <input class="input_form" type="text">
+                    <label class="todo_list__task input_form">See the Doctor</label>
+                    <input class="input_form__task" type="text">
                     <button class="button__form">Edit</button>
                     <button class="button__form button__form_delete">
                         <img class="button__img_delete" src="./remove.svg" alt="button-delete">
